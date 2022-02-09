@@ -26,19 +26,40 @@ emailSubmitButton.addEventListener('click', function(){
 })
 
 
-// -------------------DADI----------------
+// -------------------BOTTONI, SWITCH, AIUTO----------------
 
-const mailButton = document.querySelector('.button-mail');
-const gameButton= document.querySelector('.button-game')
-const firstPage= document.querySelector('.first-page');
-const secondPage= document.querySelector('.second-page');
+// const mailButton = document.querySelector('.button-mail');
+// const gameButton= document.querySelector('.button-game')
+// const firstPage= document.querySelector('.first-page');
+// const secondPage= document.querySelector('.second-page');
 
-mailButton.addEventListener('click', function(){
-    firstPage.classList.toggle('active');
-})
+// mailButton.addEventListener('click', function(){
+//     firstPage.classList.toggle('active');
+// })
 
-gameButton.addEventListener('click' , function(){
-    secondPage.classList.toggle('active');
-})
+// gameButton.addEventListener('click' , function(){
+//     secondPage.classList.toggle('active');
+// })
 
+// DADI-----------------
+
+const userWrapper = document.querySelector('.number-user-wrapper');
+const computerWrapper = document.querySelector('.number-computer-wrapper')
+
+const numberGeneratorComputer = Math.floor(Math.random() * 6) + 1;
+const numberGeneratorUser = Math.floor(Math.random() * 6) + 1;
+const results = document.getElementById('risultati');
+
+userWrapper.append(numberGeneratorUser);
+computerWrapper.append(numberGeneratorComputer);
+
+if(numberGeneratorUser>numberGeneratorComputer){
+    results.append('hai vinto')
+}
+else if (numberGeneratorUser<numberGeneratorComputer){
+    results.append('hai perso')
+}
+else if (numberGeneratorUser===numberGeneratorComputer){
+    results.append('pareggio')
+}
 

@@ -1,5 +1,7 @@
 body{
     background-color: lavender;
+    display: flex;
+    flex-direction: column;
 }
 #submit{
     border-radius: 6px;
@@ -24,7 +26,7 @@ a{
 }
 
 .mt{
-    margin-top:250px ;
+    margin-top:100px ;
 }
 
 .transparent{
@@ -45,7 +47,7 @@ a{
     color: purple;
 }
 
-.second-page{
+/* .second-page{
     visibility: hidden;
 }
 .first-page{
@@ -53,4 +55,21 @@ a{
 }
 .active{
     visibility: visible;
+} */
+
+
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
