@@ -26,6 +26,19 @@ emailSubmitButton.addEventListener('click', function(){
 })
 
 
+// -------------------DADI----------------
 
+const mailButton = document.querySelector('.button-mail');
+const gameButton= document.querySelector('.button-game')
+const firstPage= document.querySelector('.first-page');
+const secondPage= document.querySelector('.second-page');
+
+mailButton.addEventListener('click', function(){
+    firstPage.classList.toggle('active');
+})
+
+gameButton.addEventListener('click' , function(){
+    secondPage.classList.toggle('active');
+})
 
 
